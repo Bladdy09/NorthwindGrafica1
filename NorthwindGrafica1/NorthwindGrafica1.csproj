@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{65999F67-F297-4BDD-B1DA-EF5928961138}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NorthwindGrafica1</RootNamespace>
+    <AssemblyName>NorthwindGrafica1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CrearOrden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearOrden.Designer.cs">
+      <DependentUpon>CrearOrden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCaterories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCaterories.Designer.cs">
+      <DependentUpon>FCaterories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCustomer.Designer.cs">
+      <DependentUpon>FCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCustomersLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCustomersLista.Designer.cs">
+      <DependentUpon>FCustomersLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FEmpleados.Designer.cs">
+      <DependentUpon>FEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FEmpleadosLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FEmpleadosLista.Designer.cs">
+      <DependentUpon>FEmpleadosLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FListaCategories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListaCategories.Designer.cs">
+      <DependentUpon>FListaCategories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FProducto.Designer.cs">
+      <DependentUpon>FProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FProductsLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FProductsLista.Designer.cs">
+      <DependentUpon>FProductsLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRegion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRegion.Designer.cs">
+      <DependentUpon>FRegion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRegionLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRegionLista.Designer.cs">
+      <DependentUpon>FRegionLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FShippers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FShippers.Designer.cs">
+      <DependentUpon>FShippers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FShippersLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FShippersLista.Designer.cs">
+      <DependentUpon>FShippersLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FSuplidor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSuplidor.Designer.cs">
+      <DependentUpon>FSuplidor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FSuppliersLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSuppliersLista.Designer.cs">
+      <DependentUpon>FSuppliersLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FTerritoriesLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FTerritoriesLista.Designer.cs">
+      <DependentUpon>FTerritoriesLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FTerritorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FTerritorio.Designer.cs">
+      <DependentUpon>FTerritorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaOrden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaOrden.Designer.cs">
+      <DependentUpon>ListaOrden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Categories.cs">
+      <DependentUpon>DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CustomerDemographics.cs">
+      <DependentUpon>DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Customers.cs">
+      <DependentUpon>DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Employees.cs">
+      <DependentUpon>DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Orders.cs">
+      <DependentUpon>DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Order_Details.cs">
+      <DependentUpon>DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Products.cs">
+      <DependentUpon>DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Region.cs">
+      <DependentUpon>DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Shippers.cs">
+      <DependentUpon>DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Suppliers.cs">
+      <DependentUpon>DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Territories.cs">
+      <DependentUpon>DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NorthwindDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NorthwindDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CrearOrden.resx">
+      <DependentUpon>CrearOrden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCaterories.resx">
+      <DependentUpon>FCaterories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCustomer.resx">
+      <DependentUpon>FCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCustomersLista.resx">
+      <DependentUpon>FCustomersLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FEmpleados.resx">
+      <DependentUpon>FEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FEmpleadosLista.resx">
+      <DependentUpon>FEmpleadosLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FListaCategories.resx">
+      <DependentUpon>FListaCategories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FProducto.resx">
+      <DependentUpon>FProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FProductsLista.resx">
+      <DependentUpon>FProductsLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRegion.resx">
+      <DependentUpon>FRegion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRegionLista.resx">
+      <DependentUpon>FRegionLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FShippers.resx">
+      <DependentUpon>FShippers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FShippersLista.resx">
+      <DependentUpon>FShippersLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FSuplidor.resx">
+      <DependentUpon>FSuplidor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FSuppliersLista.resx">
+      <DependentUpon>FSuppliersLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FTerritoriesLista.resx">
+      <DependentUpon>FTerritoriesLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FTerritorio.resx">
+      <DependentUpon>FTerritorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaOrden.resx">
+      <DependentUpon>ListaOrden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EntityDeploy Include="Models\DB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Models\DB.edmx.diagram">
+      <DependentUpon>DB.edmx</DependentUpon>
+    </None>
+    <None Include="NorthwindDataSet.xsc">
+      <DependentUpon>NorthwindDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NorthwindDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NorthwindDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NorthwindDataSet.xss">
+      <DependentUpon>NorthwindDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eliminar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buscar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actualizar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Añadir.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Models\DB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>DB.Context.cs</LastGenOutput>
+      <DependentUpon>DB.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\DB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DB.edmx</DependentUpon>
+      <LastGenOutput>DB.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
